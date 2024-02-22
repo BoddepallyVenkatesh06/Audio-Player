@@ -1,0 +1,15 @@
+.wrapper {
+  margin-top: 30px;
+  text-align: center;
+  color: #303030;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.wrapper p {
+  margin: 10px;
+}
+
+.contribute {
+  font-weight: 600;
+}

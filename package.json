@@ -1,0 +1,59 @@
+{
+  "name": "@madzadev/audio-player",
+  "version": "2.1.11",
+  "description": "React/NextJS audio player for your music, with custom controls, playlist, filters, and search functionality.",
+  "keywords": [
+    "react",
+    "nextjs",
+    "audio",
+    "player",
+    "mp3",
+    "music"
+  ],
+  "author": "Madza <hi@madza.dev> (http://madza.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madzadev/audio-player.git"
+  },
+  "homepage": "https://audioplayer.madza.dev/",
+  "bugs": {
+    "url": "https://github.com/madzadev/audio-player/issues"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/audio-player.umd.cjs",
+  "module": "./dist/audio-player.js",
+  "exports": {
+    ".": {
+      "import": "./dist/audio-player.js",
+      "require": "./dist/audio-player.umd.cjs"
+    },
+    "./dist/index.css": "./dist/style.css"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.0.8"
+  }
+}
